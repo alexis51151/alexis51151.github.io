@@ -25,7 +25,7 @@
   <header class="d-flex justify-content-between align-items-center pb-3 mb-5 border-bottom">
     <span class="fs-4">Alexis Le Glaunec</span>
     <div class="d-flex col-md-3 justify-content-end align-items-center fs-5">
-      <a class="pe-1 ps-1 border-end" href="./pdf/LE_GLAUNEC_resume.pdf">Résumé</a>
+      <a class="pe-1 ps-1 border-end" href="./pdf/resume-le-glaunec.pdf">Résumé</a>
       <a class="pe-1 ps-1 border-end" href="https://github.com/alexis51151">GitHub</a>
       <a class="ps-1" href="https://linkedin.com/in/alexis-leglaunec/">LinkedIn</a>
     </div>
@@ -77,6 +77,7 @@
           <td><b>Software-Hardware Codesign for Efficient In-Memory Regular Pattern Matching
             <a class="text-important" href="pdf/asic-pldi22.pdf">[pdf]</a>
             <a class="text-info" href="https://www.youtube.com/watch?v=Whnz-odkgUg&list=PLyrlk8Xaylp4aGsN5wVcECG736A2JeMon&index=60&ab_channel=ACMSIGPLAN">[video]</a>
+            <a class="text-success" href="https://ohyoukillkenny.github.io/source/regexchecker.html">[code]</a>
           </b><br>
             Lingkun Kong, Qixuan Yu, Agnishom Chattopadhyay, <b>Alexis Le Glaunec</b>, Yi Huang, Konstantinos Mamouras, and Kaiyuan Yang.<br>
           </td>
@@ -84,15 +85,44 @@
       </tbody>
     </table>
 
+    <h3>New Projects</h3>
+    <h5>Temporal Logic Monitoring</h5>
+    <p>
+      We have designed very efficient online monitors for Metric Temporal Logic thanks to a new algorithm for sliding windows.
+      Right now, I am implementing my own falsification tool: given a simulated system, it explores the search space to find initial conditions + input signal
+      that would falsify a property expressed in temporal logic. Our end goal is to take advantage of our new monitors to greatly improve over the state-of-the-art falsification tools.
+    </p>
+
+    <h5>Regex Engine Using Bit Vector Automata</h5> <em>(Submitted for review at OOPSLA'23)</em>
+    <p>
+      Following our PLDI'22 publication, we have started the implementation of a new regex engine with specialized algorithms for the most difficult class of regex that
+      are regexes of the form <samp>r{m,n}</samp>. Our experimental results show from x20-x100 speedup against state-of-the-art tools
+      such as <a href="https://github.com/google/re2">RE2</a>, <a href="https://www.pcre.org">PCRE</a> and <a href="https://www.microsoft.com/en-us/research/publication/counting-set-automata/">CsA</a>.
+    </p>
+
+    <h5>Static Analysis for Memory-Efficient Matching</h5> <em>(Submitted for review at PLDI'23)</em>
+    <p>
+      Follow-up of our work on efficient matching regexes of the form <samp>r{m,n}</samp>, we refined the notion of <em>counter-ambiguity</em>
+      from our PLDI'22 publication to come up with the more fine-grain <em>sparseness</em>. We developed a static analysis that allows for great memory
+      savings for this class of regexes. We also improved the performance of both the <em>counter-ambiguity</em> and <em>sparseness</em> analysis, that
+      can now run in minutes over entire datasets versus hours before.
+    </p>
+
     <h3>Teaching Assistant</h3>
     <ul>
       <li><a href="https://www.cs.rice.edu/~vardi/comp409/">Logic in Computer Science and Artificial Intelligence</a> (Fall 2022)<br>
       Assisted <a  href="https://www.cs.rice.edu/~vardi/">Moshe Y. Vardi</a> and gave a lecture.</li>
     </ul>
 
+    <h3>Mentoring</h3>
+    <p>
+      I am currently mentoring a Houston High School student, guiding her to create an embedded heart-rate monitor using a Domain-Specific Query
+      Language for stream processing.
+    </p>
+
   </main>
   <footer class="pt-3 text-muted border-top">
-    Last updated: 12/04/2022
+    Last updated: 12/15/2022
   </footer>
 </div>
 

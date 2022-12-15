@@ -58,3 +58,9 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
