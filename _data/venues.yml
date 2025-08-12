@@ -1,9 +1,14 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"OOPSLA":
+  url: https://www.sigplan.org/Conferences/OOPSLA/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
+"ISCA":
+  url: https://iscaconf.org
   color: "#009f36"
+
+"PLDI":
+  url: https://conf.researchr.org/series/pldi
+  color: "#9f8700"
+
+"ASPLOS":
+  url: https://www.sigplan.org/Conferences/ASPLOS/
