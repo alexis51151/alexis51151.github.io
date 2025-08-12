@@ -47,8 +47,8 @@ repo_trophies:
 navbar_fixed: true
 footer_fixed: true
 search_enabled: true
-socials_in_search: true
-posts_in_search: true
+socials_in_search: false
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -94,7 +94,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -189,6 +189,12 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/blog.md 
+  - _pages/projects.md 
+  - _pages/repositories.md 
+  - _pages/teaching.md 
+  - _pages/news.md 
+  -
 keep_files:
   - CNAME
   - .nojekyll
